@@ -14,6 +14,21 @@ let userFavoriteColor = prompt("Qual è il tuo colore preferito?");
 console.log(userFavoriteColor);
 
 
-const userPsw = userName + userLastName + userFavoriteColor;
+let stefanoAge = prompt ("Quanti anni ha Stefano?");
+
+console.log(stefanoAge);
+
+
+let currentYear = 2022;
+
+console.log(currentYear);
+
+
+let stefanoYearOfBirth = currentYear - stefanoAge;
+
+console.log(stefanoYearOfBirth);
+
+
+const userPsw = userName + userLastName + userFavoriteColor + stefanoYearOfBirth;
 
 document.getElementById("userPsw").innerHTML = "La tua password è:" + " " + userPsw;
